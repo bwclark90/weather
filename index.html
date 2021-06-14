@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="./style.css">
+</head>
+<body>
+
+
+<div class ="container-fluid">
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+  </div>
+</nav>
+<br>
+<br>
+<div class="row">
+  <div class="col">
+    <div class="container d-flex justify-content-center">
+      <div class="card mt-5 p-4">
+        <div class="input-group mb-3"> <input type="text" placeholder ="Enter a city..." class="form-control" id="search">
+          <div class="input-group-append">
+            <button class="btn btn-dark" id="searchBtn">SEARCH<i class="fas fa-search"></i></button></div>
+        </div> <span class="text mb-4">Search Location</span>
+        <div class="d-flex flex-row justify-content-between mb-3">
+          
+          <div class="results pt-3 pl-3"> <span class="mb-2"></span>
+            <div class="display">
+              <div class="card-body">
+                <h1 id="cityName"></h1>
+                <p>City Name: <span id="cityLocation"></span></p>
+                <p>Current Conditions: <span id="conditions"></span></p>
+                <p>Temperature: <span id="temp"></span>&degF</p>
+                <p>Humidity: <span id="hum"></span>%</p>
+                <p>Wind Speed: <span id="wndSpd"></span>MPH</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col" id="picdiv">
+    <img src="https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg" alt="weather" id="weatherpic">
+  </div>
+  
+</div>
+<div class="row2">
+  <div class="col1" id ="5dayforcast"><h3><span>5 Day Forcast</span></h3></div>
+  
+</div>
+
+  
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    
+    
+</body>
+</html>
