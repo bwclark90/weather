@@ -1,7 +1,7 @@
 /* search bar */
+
 .row2 {
   display: flex;
-  
 }
 
 .col1 {
@@ -16,7 +16,7 @@
 #picdiv {
   margin-bottom: 20px;
   position: absolute;
-  float:left;
+  float: left;
 }
 
 #weatherpic {
@@ -27,13 +27,18 @@
   float: left;
 }
 
-body {
+.container {
+  background-image: url("https://bics.com/wp-content/uploads/2018/04/Clouds.jpg");
+}
+
+.body {
   background-color: #7e89c8;
   font-family: 'Heebo', sans-serif
 }
 
 .card {
   width: 500px;
+  background-color: rgb(13 110 253 / 0%) !important;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -42,6 +47,10 @@ body {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
 }
 
 .form-control {
@@ -94,6 +103,10 @@ span.mb-2 {
 
 h5 span {
   color: #869099
+}
+
+.bg-info {
+  background-color: #4e6470!important;
 }
 
 @media screen and (max-width: 450px) {

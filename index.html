@@ -12,7 +12,7 @@
 <body>
 
 
-<div class ="container-fluid">
+<div class ="container-fluid" style="background-image: url(https://bics.com/wp-content/uploads/2018/04/Clouds.jpg)">
 
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
@@ -21,25 +21,29 @@
 </nav>
 <br>
 <br>
+
 <div class="row">
   <div class="col">
     <div class="container d-flex justify-content-center">
-      <div class="card mt-5 p-4">
+      <div class="card p-4" style="background-color: rgb(13 110 253 / 0%)">
         <div class="input-group mb-3"> <input type="text" placeholder ="Enter a city..." class="form-control" id="search">
           <div class="input-group-append">
             <button class="btn btn-dark" id="searchBtn">SEARCH<i class="fas fa-search"></i></button></div>
-        </div> <span class="text mb-4">Search Location</span>
+          </div> <span class="text mb-4">Search Location</span>
+        
         <div class="d-flex flex-row justify-content-between mb-3">
           
           <div class="results pt-3 pl-3"> <span class="mb-2"></span>
             <div class="display">
               <div class="card-body">
-                <h1 id="cityName"></h1>
-                <p>City Name: <span id="cityLocation"></span></p>
-                <p>Current Conditions: <span id="conditions"></span></p>
-                <p>Temperature: <span id="temp"></span>&degF</p>
-                <p>Humidity: <span id="hum"></span>%</p>
-                <p>Wind Speed: <span id="wndSpd"></span>MPH</p>
+                <h2></h2><b><span id="date"></span></b>
+                
+                <h3>City:     <b><span id="cityLocation"></span></b></h3>
+                <h3>Temp:     <b><span id="temp"></span>&degF</b></h3>
+                <p><b>Current Conditions:     <span id="conditions"></span></b></p>
+                <p><b>Humidity:       <span id="hum"></span>%</b></p>
+                <p><b>Wind Speed:     <span id="wndSpd"></span>MPH</b></p>
+                <p><b>UV Index:       <span id="uvIndex"></span></b></p>
                 
               </div>
             </div>
@@ -71,6 +75,6 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
     
-    
+   
 </body>
 </html>
