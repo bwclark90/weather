@@ -1,12 +1,11 @@
-/* search bar */
-
 .row2 {
   display: flex;
 }
 
-.col1 {
-  width: 100%;
-  height: 100px;
+.forcastcol {
+  float: left;
+  display: inline;
+  width: 24%;
 }
 
 .row {

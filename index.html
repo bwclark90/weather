@@ -9,7 +9,7 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="./style.css">
 </head>
-<body>
+<body style="position: relative;">
 
 
 <div class ="container-fluid" style="background-image: url(https://bics.com/wp-content/uploads/2018/04/Clouds.jpg)">
@@ -21,12 +21,23 @@
 </nav>
 <br>
 <br>
+<div class="btn-group dropstart">
+  <button type="button" id="historyBtn" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Saved Locations
+  </button>
+  <ul class="dropdown-menu" id="searchHistory">
+  </ul>
+</div>
+<button id="clearHistory">Clear History</button>
+<div class="container">
+  <div class="row">
 
 <div class="row">
   <div class="col">
     <div class="container d-flex justify-content-center">
+      <form>
       <div class="card p-4" style="background-color: rgb(13 110 253 / 0%)">
-        <div class="input-group mb-3"> <input type="text" placeholder ="Enter a city..." class="form-control" id="search">
+        <div class="input-group mb-3" id="searchBar"> <input type="text" placeholder ="Enter a city..." class="form-control" id="search">
           <div class="input-group-append">
             <button class="btn btn-dark" id="searchBtn">SEARCH<i class="fas fa-search"></i></button></div>
           </div> <span class="text mb-4">Search Location</span>
@@ -51,6 +62,7 @@
         </div>
         
       </div>
+      </form>
     </div>
   </div>
   <div class="col" id="picdiv">
@@ -58,8 +70,8 @@
   </div>
   
 </div>
-<div class="row2">
-  <div class="col1" id ="5dayforcast"><h3><span>5 Day Forcast</span></h3></div>
+<div class="col1" id ="5dayforcast"><h3><span>5 Day Forcast</span></h3></div>
+<div class="row2" id="row2" style="display: flex;">
   
 </div>
 
